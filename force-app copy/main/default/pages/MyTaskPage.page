@@ -1,0 +1,19 @@
+<apex:page controller="MyController2">
+<apex:pageBlock title="My Page">
+  <apex:pageBlockTable value="{!Results}" var="Results">
+   <apex:column >
+    <apex:facet name="header">Comment value</apex:facet>
+         <apex:form >
+         <apex:inputField value="{!Results.Comment__c}"/>
+         </apex:form>
+   </apex:column>
+  </apex:pageBlockTable>
+  
+  <apex:pageBlockButtons >
+  <apex:form >
+                <apex:commandButton value="Update" onclick="inputField value = 'update'"/>
+  </apex:form>              
+  </apex:pageBlockButtons>
+  
+</apex:pageBlock>
+</apex:page>
